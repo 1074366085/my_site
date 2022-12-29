@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    This Post Title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock %}
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "img/mountains.jpg" %}" alt="Post Title"/>
+            <address>By Yuyifeng</address>
+            <div>Last updated on
+                <time>July 10th</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet atque delectus deleniti dolore, eaque est
+            facere iure maxime minima nesciunt non qui quos ratione sequi sit ut veritatis vitae?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi cum cumque cupiditate ea, eaque
+            earum eos est, facilis illum, ipsum iste nesciunt omnis recusandae rem sapiente sint tempora tenetur!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi cum cumque cupiditate ea, eaque
+            earum eos est, facilis illum, ipsum iste nesciunt omnis recusandae rem sapiente sint tempora tenetur!</p>
+    </main>
+{% endblock %}
