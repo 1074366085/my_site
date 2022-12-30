@@ -13,10 +13,12 @@
 </head>
 <body>
     <header id="main-navigation">
-        <h1><a href="{% url "starting-page" %}">Yuyifeng's Blog</a></h1>
+        <h1><a href="{% url "starting-page" %}">博客首页</a></h1>
         <nav>
-            <a href="{% url "posts-page" %}">All post</a>
-
+            <ul >
+                <li><a href="{% url "posts-page" %}">全部文章</a></li>
+{#                <li><a href="#">新文章</a></li>#}
+            </ul>
         </nav>
     </header>
     {% block content %}

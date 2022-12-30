@@ -15,17 +15,25 @@
     <section id="welcome">
         <header>
             <img src="{% static "blog/images/yuyifeng.png" %}" alt="Yuyifeng - The Author Of This Blog"/>
-            <h2>YUYIFENG'S BLOG</h2>
+            <h2>抖音：小于老师
+            wechat：15524576521</h2>
+
         </header>
-        <p>Hi, I am Yuyifeng and I love to blog about tech and the world!</p>
+        <p>嗨，我是于一峰，我喜欢写关于开发技能的博客，很高兴认识你！</p>
     </section>
 
     <section id="latest-posts">
-        <h2>My Latest Thoughts</h2>
+        <h2>我最近的文章</h2>
         <ul>
             {% for post in posts %}
                   {% include "blog/includes/post.html" %}
             {% endfor %}
+        </ul>
+    </section>
+    <section id="development-tools">
+        <h2>开发工具</h2>
+        <ul>
+
         </ul>
     </section>
 
