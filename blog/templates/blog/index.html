@@ -15,18 +15,17 @@
     <section id="welcome">
         <header>
             <img src="{% static "blog/images/yuyifeng.png" %}" alt="Yuyifeng - The Author Of This Blog"/>
-            <h2>抖音：小于老师
-            wechat：15524576521</h2>
+            <h2>YUYIFENG'S BLOG</h2>
 
         </header>
-        <p>嗨，我是于一峰，我喜欢写关于开发技能的博客，很高兴认识你！</p>
+        <p>Hi, My name is yuyifeng</p>
     </section>
 
     <section id="latest-posts">
         <h2>我最近的文章</h2>
         <ul>
             {% for post in posts %}
-                  {% include "blog/includes/post.html" %}
+                {% include "blog/includes/post.html" %}
             {% endfor %}
         </ul>
     </section>
@@ -38,12 +37,13 @@
     </section>
 
     <section id="about">
-        <h2>What I Do</h2>
+        <h2>感谢你的支持</h2>
         <p>
-            I love programming, I love to help others and I enjoy exploring new technologies in general!
+            我喜欢编程，我喜欢帮助其他人，并且我喜欢探索新的技术！
         </p>
         <p>
-            My goal is to keep on growing as a developer - and if I could help you do the same, I'd be very happy!
+            我的目标是作为一名开发人员继续成长，如果我能帮你做到这一点，我会很高兴的！
         </p>
+        <p>@Copyright@Dlxzkj.com</p>
     </section>
 {% endblock %}

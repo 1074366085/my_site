@@ -1,5 +1,13 @@
 from django.shortcuts import render
+from mdeditor.fields import MDTextFormField
 from datetime import date
+from django import forms
+from django.views.generic import View
+
+#
+class BlogForm(forms.Form):
+    content = MDTextFormField
+
 
 all_posts = [
     {
@@ -92,3 +100,8 @@ def post_detail(request, slug):
     return render(request, "blog/post-detail.html", {
         "post": identified_post
     })
+
+
+
+def add_post(request):
+    return render(request, 'blog/add-post.html')

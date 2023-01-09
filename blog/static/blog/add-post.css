@@ -1,0 +1,21 @@
+body {
+    background-color: #e7e7e7;
+}
+
+#main-navigation {
+    background-color: #390281;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.add-post {
+    margin: 7rem auto;
+    width: 90%;
+    max-width: 60rem;
+}
+
+.add-post h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2e2e2e;
+    margin: 3rem 0;
+}
