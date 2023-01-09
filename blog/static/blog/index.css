@@ -22,10 +22,10 @@
 }
 
 #welcome h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin: 0 0 0 2rem;
   color: #e4e4e4;
-  width: 10rem;
+  width: 15rem;
 }
 
 #welcome p {
@@ -37,7 +37,15 @@
   background-color: white;
   padding: 2rem;
   border-radius: 12px;
-  width: 60rem;
+  width: 100rem;
+  margin: -6rem auto 2rem auto;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+}
+#development-tools {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100rem;
   margin: -6rem auto 2rem auto;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
 }
