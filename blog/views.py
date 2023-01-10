@@ -4,6 +4,7 @@ from datetime import date
 from django import forms
 from django.views.generic import View
 
+
 #
 class BlogForm(forms.Form):
     content = MDTextFormField
@@ -100,7 +101,6 @@ def post_detail(request, slug):
     return render(request, "blog/post-detail.html", {
         "post": identified_post
     })
-
 
 
 def add_post(request):
